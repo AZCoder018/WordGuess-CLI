@@ -2,39 +2,19 @@
 
 #### __WHAT DOES THIS APP DO?__
 
-Liri-Node-App is a _Language_ Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back data. This current configuration of Liri-Node-App takes in specific, limited comands and displays, depending on the command,the last 20 tweets of Twitter user __MissULucy550__; information from Spotifiy about any particular song requested by the app user; information from the Open Movie Database API (OMDB) about a particular movie requesed by the app user; or random information from a .txt file, which, by default, provides information from Spotify about the song, "I Want It That Way", by the Backstreet Boys. 
+WordGuess-CLI is a command line node game app that is similar to hangman. This current configuration of WordGuess-CLI involves world capitals. The app randomly choses a world capital from a word bank of 20 world capitals and then displays on the command line the redacted world capital, with each letter of the world capital represented by a blank underscore. For example, if the app randomly chose 'Zurich' as a world capital, 'Zurich' will appear as '_ _ _ _ _ _' on the command line. The user must then guess each of the missing letters contained within the randomly chosen world capital. If the player guesses a correct letter, that letter will appear in place of the appropriate underscore on the command line. So, if the player correctly guesses 'Z', the letter 'Z' will appear as 'Z _ _ _ _' on the command line. If the player makes 10 incorrect guesses, the player loses the game. 
 
 #### __HOW DO YOU GET STARTED?__
 
 1. Make sure that you have node.js installed on your computer.
 
-2. Clone or download the repository for Liri-Node-App.
+2. Clone or download the repository for WordGuess-CLI.
 
-3. Obtain the following:
-
-    * API keys from Twitter: (i) consumer key; (ii) consumer secret; (iii) access token key; and (iv) access token secret. Go to <https://apps.twitter.com/app/new> to obtain the API keys from Twitter.
-
-    * API keys from Spotify: (i) client id; and (ii) client secret. Go to <https://developer.spotify.com/my-applications/#!/applications/create> to obtain API keys from Twitter. 
-
-    __Note, you must obtain your own API keys, as they are not provided with the Liri-Node-App that you have downloaded.The Liri-Node-App will not work without your own API keys.__
-        
-4. Create a Environmental Variables file named `.env`, add the following to it, replacing the values with your API keys (no quotes) once you have them:
-
-            SPOTIFY_ID=your-spotify-id
-            SPOTIFY_SECRET=your-spotify-secret
-
-            TWITTER_CONSUMER_KEY=your-twitter-consumer-key
-            TWITTER_CONSUMER_SECRET=your-twitter-consumer-secret
-            TWITTER_ACCESS_TOKEN_KEY=your-access-token-key
-            TWITTER_ACCESS_TOKEN_SECRET=your-twitter-access-token-secret
-
-5. Include the above .env file in the root directory of the Liri-Node-App that you have downloaded.
-
-6. Open GitBash or Terminal, making sure that you are in the file location of the Liri-Node-App, and run command 'npm install', to complete installation (all necessary aps from npm.js will be downloaded and installed). 
+3. Open GitBash or Terminal, making sure that you are in the file location of WordGuess-CLI, and run command 'npm install', to complete installation (all necessary aps from npm.js will be downloaded and installed). 
 
 #### __HOW DOES LIRI-NODE-APP WORK?__
 
-* Use GitBash or Terminal to navigate to the file location of the Liri-Node-App. You can then enter on the command line 'node liri.js', plus one of four possible commands - (i) my-tweets; (ii) spotify-this-song; (iii) movie-this; or (iv) do-what-it-says - as follows:
+* Use GitBash or Terminal to navigate to the file location of WordGuess-CLI. You can then enter on the command line 'node index.js'. 
 
   * node liri.js my-tweets
     - 20 last tweets from Twitter user __MissULucy550__ will be retured
@@ -67,6 +47,6 @@ Liri-Node-App is a _Language_ Interpretation and Recognition Interface. LIRI is 
      
      __Note that users are free to change the text in the 'random.txt' document to test out the feature for other commands.__
 
-#### __WHO MAINTAINS AND CONTRIBUTES TO THIS VERSION OF LIRI-NODE-APP?__
+#### __WHO MAINTAINS AND CONTRIBUTES TO THIS VERSION OF WordGuess-CLI?__
 
-This version of Liri-Node-App was created by me, Jason Heath Meadows, Esq., currently a student at the University of Arizona Coding Boot Camp, in Gilbert, Arizona. I will maintain and contribute to this app, as necessary, as part of my Portfolio.
+This version of WordGuess-CLI was created by me, Jason Heath Meadows, Esq., currently a student at the University of Arizona Coding Boot Camp, in Gilbert, Arizona. I will maintain and contribute to this app, as necessary, as part of my Portfolio.

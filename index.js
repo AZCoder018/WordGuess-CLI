@@ -14,7 +14,7 @@ var wordBank = ["bujumbura", "santo domingo", "ulaanbaatar", "wellington", "braz
 //Function to start game and pick a new word
 var gameStart = function() {
     guessedLetters = [];
-    randomWord = wordBank[Math.floor(Math.random() = wordBank.length)];
+    randomWord = wordBank[Math.floor(Math.random() * wordBank.length)];
     game = new word.word(randomWord);
     console.log(" ---- New Word ---- ");
     game.returnWord();
