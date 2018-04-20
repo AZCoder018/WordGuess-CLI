@@ -46,8 +46,48 @@ var turn = function() {
         console.log("You lose!");
         console.log("");
         restart();
+        }
 
+//If guess passed all validation and is in the word, a good guess is logged, updates the word.
+    } else {
+        guessedLetters.push(response.guess.toLowerCase());
+        console.log("Great Guess!");
+        game.guess(response.guess.toLowerCase());
+        game.returnWord();
 
+//If the full word has been guessed, game is won
+    if (game.currentIteration.indexOf("_ ") === -1) {
+        console.log("You win!");
+        console.log();
+
+//If not keep playing
+    } else {
+        turn();
+    }
+}
+
+//If player validation fails first if statement (if letter has already been played), let the player know, retry.
+    } else {
+        console.log("Sorry, but that letter has already been played");
+        game.returnWord();
+        turn();
+        }  
+    }
+    });
+};
+
+//This function restarts the game, via a prompt asking if the user wants to play again
+
+var restart = function () {
+    inquirer.prompt({type: "confirm", message: "Would you like to play again?", name: "confirm", default: true}).then(function(response) {
+        if (response.confirm === true) {
+            lives = 10;
+            gameStart();
+        } else {
+            console.log("See you next time!");
+        }
+    });
+};
 
 //Start screen and start game
 console.log("\n---==== WORLD CAPITALS ====---\n");
