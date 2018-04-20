@@ -5,7 +5,7 @@ var Letter = function (character, guessed) {
 
     this.guessReturn = function () {
         if (this.guessed === true) {
-            return (this.character + " ");
+            return (this.character + "");
     }   else {
         return ("_ ");
     }
@@ -14,10 +14,10 @@ var Letter = function (character, guessed) {
 //Compare actual letter with letter guessed by user; if letters match then = true
 this.guessCheck = function(guessedLetter) {
     if (this.character === guessedLetter) {
-        this.guessed - true;    
+        this.guessed = true;    
         }
     };
 };
 
 //Export this file, Letter.js
-module.exports = Letter;
+module.exports = Letter; 
