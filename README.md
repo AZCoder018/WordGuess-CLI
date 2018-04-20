@@ -25,7 +25,7 @@ WordGuess-CLI is a command line node game app that is similar to hangman. This c
   - The user is not penalized for multiple guesses using the same letter.
   - It is not necessary for the user to capitalize guesses.
 
-  * Regardless of whether the user wins or loses, the user will be asked is the user wants to play again. If the user answers Y, the game resets and a new random word is chosen by the computer. If the user answers N, the user will receive the message "BYE! BYE!".
+* Regardless of whether the user wins or loses, the user will be asked is the user wants to play again. If the user answers Y, the game resets and a new random word is chosen by the computer. If the user answers N, the user will receive the message "BYE! BYE!".
 
 #### __WHO MAINTAINS AND CONTRIBUTES TO THIS VERSION OF WordGuess-CLI?__
 
