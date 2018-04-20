@@ -19,4 +19,5 @@ this.guessCheck = function(guessedLetter) {
     };
 };
 
+//Export this file, Letter.js
 module.exports = Letter;
