@@ -15,7 +15,7 @@ var Word = function(currentWord) {
 be displayed automatically (i.e., spaces and -), thus setting boolean guessed to true */
 for (var i = 0; i < this.letters.length; i++) {
     var character = "";
-    if (aplahabet.indexOf(this.letters[i].toLowerCase()) === -1) {
+    if (alpahabet.indexOf(this.letters[i].toLowerCase()) === -1) {
         character = new Letter(this.letters[i], true);
     } else {
         character = new Letter(this.Letters[i], false);
