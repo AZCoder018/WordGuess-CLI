@@ -10,6 +10,17 @@ var Word = function(currentWord) {
     this.letters = currentWord.split("");
     this.newLettersArray = [];
     this.currentIteration = "";
+
+/* Create original word and determine if the letter is alphabetical, pushing into Letters. All non-alphabetical letters will 
+be displayed automatically (i.e., spaces and -), thus setting boolean guessed to true */
+for (var i = 0; i < this.letters.length; i++) {
+    var character = "";
+    if (aplahabet.indexOf(this.letters[i].toLowerCase()) === -1) {
+        character = new Letter(this.letters[i], true);
+    } else {
+        character = new Letter(this.Letters[i], false);
+    }
+    this.newLettersArray.push(character);
 }
 
 //Function to run guessed letter in the letter constructor
