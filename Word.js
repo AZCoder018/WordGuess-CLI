@@ -10,8 +10,7 @@ var Word = function(currentWord) {
   this.newLettersArray = []; 
   this.currentIteration = ""; 
 
- /* Create original word and determine if the letter is alphabetical, pushing into Letters. All non-alphabetical letters will 
-be displayed automatically (i.e., spaces and -), thus setting boolean guessed to true */
+//Need to return string to identify which letters have been selected. 
   for (var i = 0; i < this.letters.length; i++) {
     var character = "";
     if (alphabet.indexOf(this.letters[i].toLowerCase()) === -1) {
@@ -43,8 +42,4 @@ be displayed automatically (i.e., spaces and -), thus setting boolean guessed to
 };
 
 //Exports both the constructor and alphabet
-module.exports = {
-  word: Word,
-  alphabet: alphabet
-};
-
+module.exports = {alphabet:alphabet, word:Word};
