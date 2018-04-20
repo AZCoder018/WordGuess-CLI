@@ -23,6 +23,17 @@ for (var i = 0; i < this.letters.length; i++) {
     this.newLettersArray.push(character);
 }
 
+//Constructs the currentIteration so the word can be displayed on the console
+this.returnWord = function() {
+    var displayWord = "";
+    for (var i = 0; i < this.newLetterArray.length; i++) {
+        displayWord - displayWord + this.newLettersArray[i].guessReturn();
+    }
+    this.currentIteration = displayWord;
+    console.log("");
+    console.log(displayWord.toUpperCase());
+};
+
 //Function to run guessed letter in the letter constructor
 this.guess = function(guessedLetter) {
     for (var i = 0; i < this.newLettersArray.length; i++) {
@@ -33,4 +44,3 @@ this.guess = function(guessedLetter) {
 
 //Exports constructor and alphabet
 module.exports = {word: Word, alphabet: alphabet};
-};
