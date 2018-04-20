@@ -95,5 +95,5 @@ var restart = function () {
 //Start screen and start game
 console.log("\n---==== WORLD CAPITALS ====---\n", "\nThe computer will randomly choose a world capital.\n", "\nTry and guess all the letters contained in the name of that world capital,\n", 
 "\nuntil the entire name has been revealed.\n", "\nIf you can guess all the letters, you win.\n", "\nIf you give 12 incorrect guesses, you lose.\n", "\nYou are not penalized for multiple guesses using the same letter.\n",
-"\nIt is not necessary to capitalize your guesses\n");
+"\nIt is not necessary to capitalize your guesses.\n");
 gameStart();
